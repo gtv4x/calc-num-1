@@ -1,23 +1,27 @@
 # Numerical Methods Implemented in Programming
 
-This repository contains implementations of various numerical methods in Fortran (for the fulture I want to rewrite them using Python libraries too). These methods are commonly used in numerical calculus to solve equations, find roots, and solve systems of linear equations.
+This repository contains implementations of various numerical methods in Fortran. These methods are commonly used in numerical calculus to solve equations, find roots, perform interpolation, and solve systems of linear equations.
 
-It started as separete college projects and evolved into this repo. In the future I might add an Latex file explaining some of the math behind each method, for in the case of curiosity. Feel free to use/copy the code for your project or just for study ;) 
+It started as separate college projects and evolved into this repo. In the future, I might add a LaTeX file explaining some of the math behind each method, in case of curiosity. Feel free to use/copy the code for your project or just for study ;)
 
 ## Implemented Methods
 
-### Zeros de Funções (Root-Finding Methods)
-1. **Método das Secantes** (`secantes.f90`): Finds roots of a function using the secant method.
-2. **Método de Newton-Raphson** (`newton-raphson.f90`): Uses the Newton-Raphson method for root-finding.
-3. **Método da Bisseção** (`bissecao.f90`): Implements the bisection method for finding roots.
-4. **Iteração de Ponto Fixo** (`iteracao_ponto_fixo.f90`): Solves equations using fixed-point iteration.
+### Root-Finding Methods (Zeros de Funções)
+1. **Secant Method** (`secantes.f90`): Finds roots of a function using the secant method.
+2. **Newton-Raphson Method** (`newton-raphson.f90`): Uses the Newton-Raphson method for root-finding.
+3. **Bisection Method** (`bissecao.f90`): Implements the bisection method for finding roots.
+4. **Fixed-Point Iteration** (`iteracao_ponto_fixo.f90`): Solves equations using fixed-point iteration.
 
-### Sistemas de Equações Lineares (Linear Systems)
-1. **Matriz Triangular Superior** (`matriz_triangular_superior_2.0.f90`): Solves upper triangular systems.
-2. **Matriz Triangular Inferior** (`matriz_triangular_inferior_2.0.f90`): Solves lower triangular systems.
-3. **Método de Jacobi-Richardson** (`jacobi-richardson.f90`): Iterative method for solving linear systems.
-4. **Método de Gauss-Seidel** (`gauss_seidel.f90`): Another iterative method for solving linear systems.
-5. **Eliminação de Gauss** (`eliminacao_de_gauss.f90`): Solves linear systems using Gaussian elimination.
+### Linear Systems (Sistemas de Equações Lineares)
+1. **Upper Triangular Matrix** (`matriz_triangular_superior_2.0.f90`): Solves upper triangular systems.
+2. **Lower Triangular Matrix** (`matriz_triangular_inferior_2.0.f90`): Solves lower triangular systems.
+3. **Jacobi-Richardson Method** (`jacobi-richardson.f90`): Iterative method for solving linear systems.
+4. **Gauss-Seidel Method** (`gauss_seidel.f90`): Another iterative method for solving linear systems.
+5. **Gaussian Elimination** (`eliminacao_de_gauss.f90`): Solves linear systems using Gaussian elimination.
+
+### Interpolation (Interpolação)
+1. **Vandermonde** (`vandermonde.f90`): Implements polynomial interpolation by solving a linear system of the form Va=Y and returns the polynomial coefficients.
+2. **Lagrange Method** (`lagrange.f90`): Implements Lagrange polynomial interpolation; for a given x coordinate provided by the user, it returns the interpolated point.
 
 ## How to Execute
 
