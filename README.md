@@ -25,9 +25,7 @@ It started as separate college projects and evolved into this repo. In the futur
 
 ### Derivatives and Numerical Integration (Derivadas e Integral)
 1. **Finite Differences** (`finite_differences.f90`): Calculates the numerical derivative of a function at a given point using progressive, regressive, central, and three-point finite difference formulas. The user can select the method at the beginning of the execution. Also computes the relative error if the analytical derivative is provided.
-
 2. **Numeric Integration** (`numeric_integration.f90`): Calculates the definite integral of a user-defined function over an interval using the Composite Trapezoidal and Composite Simpson's methods. The user can select the method at the beginning of the execution.
-
 3. **Newton-Raphson 2.0** (`newton-raphson_2.0.f90`): A modified Newton-Raphson method where the derivative is approximated numerically using the central finite difference formula to find roots of a function.
 
 ## How to Execute
